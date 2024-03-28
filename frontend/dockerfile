@@ -1,0 +1,10 @@
+# Use the Nginx image from Docker Hub
+FROM nginx:alpine
+
+# Copy static content into place
+COPY src /usr/share/nginx/html
+
+# Expose port 80
+EXPOSE 80
+
+# Nginx will start by default
